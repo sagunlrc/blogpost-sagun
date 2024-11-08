@@ -1,0 +1,99 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Image in Header */
+.header-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Hobbies List */
+#hobbies ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#hobbies ul li {
+    margin-bottom: 8px;
+}
+
+/* Image in Personal Section */
+.personal-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.icon-link {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.icon-link:hover {
+    color: #ffffff; /* Changes color on hover */
+}
