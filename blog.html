@@ -1,45 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sagun's Blog</title>
-    <link rel="stylesheet" href="blog.css">
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Personal Blog</h1>
-        <img src="bokalbo.jpg" alt="Friends and Me" class="header-image">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="text-center py-5 bg-dark text-white">
+      <h1>Welcome to My Personal Blog</h1>
+      <img
+        src="bokalbo.jpg"
+        alt="Friends and Me"
+        class="header-image img-fluid rounded mt-3"
+      />
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm Marck Leric A. Sagun, from Bachelor of Science in Information System 3A. I don’t have background in programming in my everyday but i do experience in school while studying. I’m just a beginner who is willing to learn about it and apply it in the future as my course is aligned with it.</p>
+    <section id="about" class="container my-5">
+      <h2>About Me</h2>
+      <div class="content-wrapper">
+        <p>
+          I'm Marck Leric A. Sagun, from Bachelor of Science in Information
+          System 3A. I don’t have a background in programming in my everyday
+          life, but I do experience it in school while studying. I’m just a
+          beginner who is willing to learn about it and apply it in the future
+          as my course is aligned with it.
+        </p>
+      </div>
     </section>
 
-    <section id="hobbies">
-        <h2>My Hobbies</h2>
-        <ul>
-            <li>Playing Basketball</li>
-            <li>Playing video games</li>
-            <li>Travelling</li>
-            <li>Watching movies</li>
+    <section id="hobbies" class="container my-5">
+      <h2>My Hobbies</h2>
+      <div class="content-wrapper">
+        <ul class="list-unstyled">
+          <li><i class="fas fa-basketball-ball"></i> Playing Basketball</li>
+          <li><i class="fas fa-gamepad"></i> Playing Video Games</li>
+          <li><i class="fas fa-plane"></i> Travelling</li>
+          <li><i class="fas fa-film"></i> Watching Movies</li>
         </ul>
+      </div>
     </section>
 
-    <section id="personal">
-        <h2>My Journey's</h2>
-        <p></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Sagun's Blog. All Rights Reserved.</p>
-        <div class="social-icons">
-            <a href="https://web.facebook.com/leric.sagun.7/" target="_blank" class="icon-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="marckleric.sagun@tup.edu.ph" class="icon-link"><i class="fas fa-envelope"></i></a>
+    <section id="personal" class="container my-5">
+      <h2>My Journey</h2>
+      <p>(click the image)</p>
+      <div class="row">
+        <div class="col-md-6 image-text-pair text-center mb-3">
+          <img
+            src="fammmm.jpg"
+            alt="Family Journey"
+            class="section-image img-fluid rounded"
+            data-toggle="modal"
+            data-target="#familyModal"
+          />
         </div>
-    </footer>
-</body>
+        <div class="col-md-6 image-text-pair text-center mb-3">
+          <img
+            src="peeps.jpg"
+            alt="Friends Journey"
+            class="section-image img-fluid rounded"
+            data-toggle="modal"
+            data-target="#friendsModal"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="familyModal"
+      tabindex="-1"
+      aria-labelledby="familyModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="familyModalLabel">Family Journey</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              This image represents my journey with my family, the support
+              they've given me, and the cherished moments we share together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="friendsModal"
+      tabindex="-1"
+      aria-labelledby="friendsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="friendsModalLabel">Friends Journey</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              This image represents the friendships I've built and the
+              unforgettable experiences we've shared along my journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 contact-form">
+            <h2>Contact Me Here</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Send Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="social-icons">
+          <a
+            href="https://web.facebook.com/leric.sagun.7/"
+            target="_blank"
+            class="icon-link mx-2"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="mailto:marckleric.sagun@tup.edu.ph" class="icon-link mx-2"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <p>&copy; 2024 Sagun's Blog. All Rights Reserved.</p>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
